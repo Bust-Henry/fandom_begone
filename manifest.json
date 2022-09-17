@@ -1,0 +1,14 @@
+{
+	"manifest_version": 3,
+	"name": "Fandom-begone",
+	"description": "Delete fandoms bs navigation",
+	"version": "1.0",
+	"content_scripts": 
+	[
+		{
+			"matches":["*://*.fandom.com/*"],
+			"js":["jquery.js", "begone.js"],
+			"run_at": "document_end"
+		}
+	]
+}
